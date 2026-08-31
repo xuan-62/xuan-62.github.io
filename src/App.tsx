@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { RunawayDot } from "./components/RunAwayDot";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,11 @@ function App() {
             creating seamless user experiences and robust applications.
           </p>
         </div>
+        <RunawayDot
+          onComplete={() => {
+            setCount((prev) => prev + 1);
+          }}
+        />
       </section>
 
       <div className="ticks"></div>

@@ -1,0 +1,44 @@
+.intro {
+  position: relative;
+  min-height: 220px;
+  padding: 3rem;
+  overflow: hidden;
+}
+
+.runaway-dot {
+  position: absolute;
+
+  left: 75%;
+  top: 35%;
+
+  width: 8px;
+  height: 8px;
+
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+
+  background: currentColor;
+
+  transition: transform 150ms ease;
+}
+
+.runaway-message {
+  position: relative;
+
+  left: 50%;
+  bottom: 1.5rem;
+
+  transform: translateX(-50%);
+
+  margin: 0;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 400ms ease;
+}
+
+.runaway-message.visible {
+  opacity: 0.6;
+}
