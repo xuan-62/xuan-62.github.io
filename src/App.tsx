@@ -20,6 +20,7 @@ function App() {
 
       <section id="next-steps">
         <div id="social">
+          <h2>Social</h2>
           <p>Let's connect and collaborate!</p>
           <ul className="social-links">
             <li>
