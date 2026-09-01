@@ -4,6 +4,7 @@ import { RunawayDot } from "./components/RunAwayDot";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [showDot, setShowDot] = useState(true);
 
   return (
     <>
@@ -15,11 +16,14 @@ function App() {
             fun.
           </p>
         </div>
-        <RunawayDot
-          onComplete={() => {
-            setCount((prev) => prev + 1);
-          }}
-        />
+        {showDot && (
+          <RunawayDot
+            onComplete={() => {
+              setCount((prev) => prev + 1);
+            }}
+            onDisappear={() => setShowDot(false)}
+          />
+        )}
       </section>
 
       <div className="ticks"></div>

@@ -60,16 +60,89 @@
 
 .message-reveal.left .runaway-message {
   right: 14px;
+  left: auto;
 }
 
 .message-reveal.right .runaway-message {
   left: 14px;
+  right: auto;
 }
 
 .message-reveal.top .runaway-message {
   bottom: 14px;
+  top: auto;
 }
 
 .message-reveal.bottom .runaway-message {
   top: 14px;
+  bottom: auto;
+}
+
+.ending-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  min-width: 180px;
+  padding: 12px;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--background);
+}
+
+.ending-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ending-copy p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.ending-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.ending-actions button {
+  font: inherit;
+  font-size: 0.9rem;
+
+  padding: 5px 8px;
+
+  border: 1px solid var(--border);
+  border-radius: 5px;
+
+  color: var(--text-h);
+  background: var(--social-bg);
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ending-actions button:hover {
+  border-color: var(--accent-border);
+}
+
+.ending-actions button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.ending-content {
+  padding: 12px 14px;
+
+  background: color-mix(in srgb, var(--background) 92%, transparent);
+
+  backdrop-filter: blur(8px);
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
