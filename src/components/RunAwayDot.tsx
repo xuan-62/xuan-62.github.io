@@ -162,7 +162,7 @@ export function RunawayDot({ onComplete }: RunawayDotProps) {
     let nextMessage = "";
 
     if (attempts >= 13) {
-      nextMessage = "Try Hire Me:)";
+      nextMessage = "Try Hire Me :)";
     } else if (attempts >= 10) {
       nextMessage = "Where are you from?";
     } else if (attempts >= 7) {
