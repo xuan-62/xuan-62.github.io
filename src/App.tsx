@@ -3,16 +3,15 @@ import "./App.css";
 import { RunawayDot } from "./components/RunAwayDot";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0); 
 
   return (
     <>
       <section id="center">
         <div>
-          <h1>Welcome!</h1>
-          <p>
-            I'm a Full-Stack Engineer with a passion for building. I thrive on
-            creating seamless user experiences and robust applications.
+          <h1 className="avoid-dot">Welcome!</h1>
+          <p className="avoid-dot">
+            I'm a Full-Stack Engineer with a passion for building. 
           </p>
         </div>
         <RunawayDot
@@ -26,9 +25,9 @@ function App() {
 
       <section id="next-steps">
         <div id="social">
-          <h2>Social</h2>
-          <p>Let's connect and collaborate!</p>
-          <ul className="social-links">
+          <h2 className="avoid-dot">Social</h2>
+          <p className="avoid-dot">Let's connect and collaborate!</p>
+          <ul className="social-links avoid-dot">
             <li>
               <a
                 href="https://github.com/xuan-62"
@@ -68,8 +67,8 @@ function App() {
       <div className="ticks"></div>
       <section id="spacer"></section>
       <div className="footer">
-        <p>Find the tricks: {count}</p>
-        <p>
+        <p className="avoid-dot">Find the tricks: {count}</p>
+        <p className="avoid-dot">
           &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
         </p>
       </div>

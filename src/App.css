@@ -54,6 +54,10 @@
     flex-direction: column;
     text-align: center;
   }
+  @media (max-width: 3840px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 #next-steps ul {
@@ -62,11 +66,7 @@
   display: flex;
   gap: 8px;
   margin: 32px 0 0;
-
-  .logo {
-    height: 18px;
-  }
-
+ 
   a {
     color: var(--text-h);
     font-size: 16px;
@@ -89,6 +89,21 @@
   }
 
   @media (max-width: 1024px) {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      flex: 1 1 calc(50% - 8px);
+    }
+
+    a {
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  }
+  @media (max-width: 3840px) {
     margin-top: 20px;
     flex-wrap: wrap;
     justify-content: center;

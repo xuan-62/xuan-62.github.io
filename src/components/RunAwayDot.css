@@ -1,44 +1,60 @@
-.intro {
+.center {
   position: relative;
-  min-height: 220px;
-  padding: 3rem;
-  overflow: hidden;
+  min-height: 100vh; 
+}
+
+.runaway,
+.message-reveal {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.runaway {
+  transition: transform 180ms ease;
 }
 
 .runaway-dot {
-  position: absolute;
-
-  left: 75%;
-  top: 35%;
-
   width: 8px;
   height: 8px;
-
   padding: 0;
   border: 0;
   border-radius: 50%;
-
   background: currentColor;
 
-  transition: transform 150ms ease;
+  animation: breathe 2.4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(0.9);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+.message-reveal {
+  opacity: 0;
+
+  transition:
+    transform 700ms ease-out,
+    opacity 400ms ease;
+}
+
+.message-reveal.visible {
+  opacity: 0.6;
 }
 
 .runaway-message {
-  position: relative;
+  position: absolute;
 
-  left: 50%;
-  bottom: 1.5rem;
+  top: 14px;
+  left: -50px;
 
-  transform: translateX(-50%);
-
-  margin: 0;
-
-  opacity: 0;
-  pointer-events: none;
-
-  transition: opacity 400ms ease;
-}
-
-.runaway-message.visible {
-  opacity: 0.6;
+  white-space: nowrap;
 }
