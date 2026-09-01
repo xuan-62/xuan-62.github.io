@@ -1,6 +1,6 @@
 .center {
   position: relative;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
 .runaway,
@@ -11,6 +11,9 @@
 }
 
 .runaway {
+  width: 32px;
+  height: 32px;
+  align-items: center;
   transition: transform 180ms ease;
 }
 
@@ -52,9 +55,21 @@
 
 .runaway-message {
   position: absolute;
-
-  top: 14px;
-  left: -50px;
-
   white-space: nowrap;
+}
+
+.message-reveal.left .runaway-message {
+  right: 14px;
+}
+
+.message-reveal.right .runaway-message {
+  left: 14px;
+}
+
+.message-reveal.top .runaway-message {
+  bottom: 14px;
+}
+
+.message-reveal.bottom .runaway-message {
+  top: 14px;
 }
