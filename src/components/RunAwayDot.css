@@ -50,7 +50,7 @@
 }
 
 .message-reveal.visible {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .runaway-message {
@@ -137,12 +137,11 @@
 }
 
 .ending-content {
-  padding: 12px 14px;
+  padding: 14px 16px;
 
-  background: color-mix(in srgb, var(--background) 92%, transparent);
-
-  backdrop-filter: blur(8px);
-
+  background: #f8f8f8;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
