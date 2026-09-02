@@ -322,12 +322,10 @@ export function RunawayDot({ onComplete, onDisappear }: RunawayDotProps) {
           <div ref={messageRef} className="runaway-message ending-content">
             <div className="ending-copy">
               <span>
-                okay, you win.
-                <br />
+              okay, you win. 
               </span>
               <span>
-                Share this page?
-                <br />
+              Share this page? 
               </span>
             </div>
 
