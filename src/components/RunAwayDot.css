@@ -50,7 +50,7 @@
 }
 
 .message-reveal.visible {
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .runaway-message {
@@ -139,7 +139,7 @@
 }
 
 .ending-content {
-  padding: 14px 16px;
+  padding: 12px 14px;
 
   background: #f8f8f8;
   border: 1px solid var(--border);
